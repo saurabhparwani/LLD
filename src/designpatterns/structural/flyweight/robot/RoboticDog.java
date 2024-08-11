@@ -1,5 +1,8 @@
 package designpatterns.structural.flyweight.robot;
 
+import lombok.Getter;
+
+@Getter
 public class RoboticDog implements IRobot{
 
     private String type;
@@ -7,12 +10,6 @@ public class RoboticDog implements IRobot{
     RoboticDog(String type, Sprites body){
         this.type = type;
         this.body = body;
-    }
-    public String getType() {
-        return type;
-    }
-    public Sprites getBody() {
-        return body;
     }
     @Override
     public void display(int x, int y) {
